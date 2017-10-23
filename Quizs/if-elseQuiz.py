@@ -7,5 +7,5 @@ def determine_direction(message):
         print "Turn Right"
     else:
         print "I don't know"
-       
+
 determine_direction("TAKE THE ROAD LESS TRAVELLED")
