@@ -10,6 +10,8 @@ def renameFiles ():
     #rename folder
     os.chdir(r"E:\Code\Udacity\Python\Projects\Secret Message")
     for fileName in fileList:
+        print("Old name " + fileName)
+        print("New name " + fileName.translate(None, "0123456789"))
         os.rename(fileName, fileName.translate(None, "0123456789"))
     os.chdir(startPath)
 
