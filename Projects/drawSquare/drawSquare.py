@@ -1,5 +1,6 @@
 import turtle
 
+
 def spawnWindow():
     window = turtle.Screen()
     window.bgcolor("red")
@@ -13,18 +14,20 @@ def spawnWindow():
 
     window.exitonclick()
 
+
 def drawSquare(myTurtle):
 
-    for i in range(1,5):
+    for i in range(1, 5):
         myTurtle.forward(100)
         myTurtle.right(90)
-    
+
 
 def drawCircle():
     angie = turtle.Turtle()
     angie.shape("arrow")
     angie.color("blue")
     angie.circle(100)
+
 
 ''' def drawTriangle():
     trike = turtle.Turtle()
