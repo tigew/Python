@@ -3,7 +3,8 @@ import os
 def renameFiles ():
     #Get file names
     fileList = os.listdir(r"E:\Code\Udacity\Python\Projects\Secret Message")
-    print(fileList)
+    # Don't need debug statment
+    #print(fileList)
 
     startPath = os.getcwd()
 
