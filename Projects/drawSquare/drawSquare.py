@@ -7,12 +7,28 @@ def spawnWindow():
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("green")
-    brad.speed(1)
+    brad.speed(100)
 
-    drawSquare(brad)
-    drawCircle()
+    for i in range(1, 100):
+        drawTriangle(brad)
+        brad.right(10)
+
+    # Draw stem
+    brad.penup()
+    brad.setpos(85, -25)
+    brad.pendown()
+    brad.setheading(270)
+    brad.color("blue")
+    brad.forward(300)
 
     window.exitonclick()
+
+    # Square
+''' for i in range(1, 37):
+        drawSquare(brad)
+        brad.right(10) '''
+
+# drawCircle()
 
 
 def drawSquare(myTurtle):
@@ -29,16 +45,11 @@ def drawCircle():
     angie.circle(100)
 
 
-''' def drawTriangle():
-    trike = turtle.Turtle()
-    trike.shape("turtle")
-    trike.color("purple")
-    
-    trike.right(45)
-    trike.forward(100)
-    trike.right(135)
-    trike.forward(100)
-    trike.right(135)
-    trike.forward(100) '''
+def drawTriangle(myTurtle):
+
+    for i in range(1, 4):
+        myTurtle.forward(200)
+        myTurtle.right(135)
+
 
 spawnWindow()
